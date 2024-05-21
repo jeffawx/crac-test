@@ -18,7 +18,7 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("org.crac:crac:1.4.0") // Only for Checkpoint on refresh in Spring Boot: -Dspring.context.checkpoint=onRefresh
 }
 
 tasks.withType<Test> {
